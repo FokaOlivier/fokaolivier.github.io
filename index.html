@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,60 +11,116 @@
 <style>
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin:0;
-    background:#f5f5f5;
-    color:#222;
+font-family: Arial;
+margin:0;
+background:#f4f6f8;
+color:#222;
 }
+
+/* HEADER */
 
 header{
-    background:#0d47a1;
-    color:white;
-    padding:40px;
-    text-align:center;
+
+background:#0d47a1;
+color:white;
+padding:40px;
+text-align:center;
+
 }
 
-section{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    margin-top:20px;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0px 2px 6px rgba(0,0,0,0.1);
+header h1{
+margin:0;
 }
 
-h1,h2{
-    margin-top:0;
+
+/* MAIN GRID */
+
+.container{
+
+max-width:1200px;
+margin:auto;
+margin-top:20px;
+
+display:grid;
+
+grid-template-columns: 1fr 1fr;
+
+gap:20px;
+
+padding:20px;
+
 }
+
+
+/* BOX STYLE */
+
+.box{
+
+background:white;
+
+padding:25px;
+
+border-radius:10px;
+
+box-shadow:0px 3px 8px rgba(0,0,0,0.1);
+
+}
+
+
+/* TITLES */
 
 h2{
-    color:#0d47a1;
+
+color:#0d47a1;
+margin-top:0;
+
 }
 
-ul{
-    line-height:1.7;
-}
 
-.contact{
-    line-height:1.8;
-}
-
-.footer{
-    text-align:center;
-    padding:20px;
-    margin-top:20px;
-    background:#eee;
-}
+/* LINKS */
 
 a{
-    color:#0d47a1;
-    text-decoration:none;
+
+color:#0d47a1;
+
+text-decoration:none;
+
 }
 
 a:hover{
-    text-decoration:underline;
+
+text-decoration:underline;
+
 }
+
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+
+margin-top:20px;
+
+padding:20px;
+
+background:#eee;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
 
 </style>
 
@@ -70,75 +128,179 @@ a:hover{
 
 <body>
 
+
+
 <header>
 
 <h1>Dr Olivier Foka Djidzem</h1>
 
 <p>
-PhD in Mathematical Modeling and Numerical Methods  
+
+PhD in Mathematical Modeling  
 <br>
-Quantitative Finance | Stochastic Models | Data Science
+Quantitative Finance | Stochastic Models
+
 </p>
 
 </header>
 
 
-<section>
+
+<div class="container">
+
+
+<!-- LEFT COLUMN -->
+
+
+<div class="box">
 
 <h2>About</h2>
 
 <p>
 
-Doctor in Mathematical Modeling, Numerical Methods and Complex Programs,
-specialized in applications of mathematics in Finance.
+Doctor in Mathematical Modeling and Numerical Methods specialized in finance.
 
-Strong background in stochastic models, financial markets modelling,
+Expertise in stochastic models, financial data analysis,
 risk management and scientific computing.
 
-Passionate about quantitative finance, insurance and mathematical innovation.
+Online mathematics tutor since 2020.
 
 </p>
 
-</section>
+</div>
 
 
 
-<section>
+<div class="box">
+
+<h2>Education</h2>
+
+<ul>
+
+<li>
+
+PhD – Mathematical Modeling  
+Bryansk State Technical University
+
+</li>
+
+<br>
+
+<li>
+
+Master – Mathematics  
+University of Douala & Yaoundé I
+
+</li>
+
+<br>
+
+<li>
+
+Bachelor – Mathematics  
+University of Douala
+
+</li>
+
+</ul>
+
+</div>
+
+
+
+
+<div class="box">
 
 <h2>Contact</h2>
 
-<div class="contact">
-
 Email:
+
 <br>
+
 fokadjidzemolivier@gmail.com
+
 <br>
+
 foka.russia.maths1@mail.ru
+
 
 <br><br>
 
 Address:
+
 <br>
-Boulevard 50 let oktyabr  
+
 Bryansk, Russia
+
 
 <br><br>
 
 YouTube:
+
 <br>
 
-<a href="https://youtube.com/@olivier_foka_djidzem" target="_blank">
-Online Mathematics Tutor Channel
+<a href="https://youtube.com/@olivier_foka_djidzem">
+
+Math Tutor Channel
+
 </a>
 
 </div>
 
-</section>
+
+
+
+<div class="box">
+
+<h2>Experience</h2>
+
+<ul>
+
+<li>
+
+Mathematics Tutor
+
+<br>
+
+Bryansk State Technical University
+
+</li>
+
+<br>
+
+
+<li>
+
+Mathematics Tutor
+
+<br>
+
+University of Douala
+
+</li>
+
+
+<br>
+
+<li>
+
+Online Tutor since 2020
+
+<br>
+
+Probability and Statistics
+
+</li>
+
+
+</ul>
+
+</div>
 
 
 
 
-<section>
+<div class="box">
 
 <h2>Languages</h2>
 
@@ -152,175 +314,16 @@ Online Mathematics Tutor Channel
 
 </ul>
 
-</section>
+</div>
 
 
 
-<section>
 
-<h2>Education</h2>
-
-<ul>
-
-<li>
-
-PhD in Mathematical Modeling and Numerical Methods  
-<br>
-Bryansk State Technical University, Russia
-
-</li>
-
-
-<li>
-
-Master in Mathematics and Applications  
-<br>
-University of Douala & University of Yaoundé I
-
-</li>
-
-
-<li>
-
-Bachelor in Mathematics and Applications  
-<br>
-University of Douala
-
-</li>
-
-</ul>
-
-</section>
-
-
-
-
-<section>
-
-<h2>Professional Experience</h2>
-
-
-<h3>Mathematics Tutor</h3>
-
-<ul>
-
-<li>
-
-Bryansk State Technical University
-
-<br>
-
-Ordinary Differential Equations,
-Integral Calculus,
-Probability Theory
-
-</li>
-
-
-<li>
-
-University of Douala
-
-<br>
-
-Probability Theory
-
-</li>
-
-
-<li>
-
-Online Tutor (Since 2020)
-
-<br>
-
-Stochastic Analysis
-
-<br>
-
-Statistics
-
-<br>
-
-Financial Mathematics
-
-</li>
-
-</ul>
-
-</section>
-
-
-
-
-<section>
-
-<h2>Research Projects</h2>
-
-<ul>
-
-<li>
-
-2021
-
-<br>
-
-Numerical study of stochastic Navier-Stokes equations
-
-<br>
-
-Tools:
-Python,
-OpenFOAM
-
-</li>
-
-
-<li>
-
-2022
-
-<br>
-
-COVID-19 Compartmental Model
-
-<br>
-
-Tools:
-R,
-RStudio
-
-</li>
-
-
-<li>
-
-2023
-
-<br>
-
-Hybrid simulation using agent-based methods
-
-<br>
-
-Tools:
-AnyLogic
-
-</li>
-
-
-</ul>
-
-</section>
-
-
-
-<section>
+<div class="box">
 
 <h2>Technical Skills</h2>
 
-
-<h3>Programming</h3>
+<b>Programming</b>
 
 <ul>
 
@@ -330,16 +333,12 @@ AnyLogic
 
 <li>Matlab</li>
 
-<li>Fortran</li>
-
-<li>C/C++</li>
-
-<li>LaTeX</li>
+<li>C++</li>
 
 </ul>
 
 
-<h3>Scientific Software</h3>
+<b>Software</b>
 
 <ul>
 
@@ -347,44 +346,25 @@ AnyLogic
 
 <li>AnyLogic</li>
 
-<li>Universal Mechanism</li>
-
 <li>Scilab</li>
 
 </ul>
 
-
-</section>
-
-
-
-
-<section>
-
-<h2>Professional Skills</h2>
-
-<ul>
-
-<li>Communication</li>
-
-<li>Analytical Thinking</li>
-
-<li>Scientific Writing</li>
-
-<li>Adaptability</li>
-
-</ul>
-
-</section>
+</div>
 
 
 
 
-<div class="footer">
+</div>
+
+
+
+<footer>
 
 © 2026 Dr Olivier Foka Djidzem
 
-</div>
+</footer>
+
 
 
 </body>
